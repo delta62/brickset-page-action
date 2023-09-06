@@ -1,0 +1,13 @@
+{
+  "addons": {
+    "{d1b4a21b-96f9-487d-89ae-14fa922c6939}": {
+      "updates": [
+        {
+          "version": "0.0.1",
+          "update_link": "https://f004.backblazeb2.com/file/brickset-extension/dist/link-to-brickset_0.0.1.xpi",
+          "update_hash": "sha256:81bcda9ebf410666f58cedee776f396f3dc38efe11f3f2bd7a75e16331ccc755"
+        }
+      ]
+    }
+  }
+}

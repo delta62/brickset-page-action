@@ -1,0 +1,43 @@
+{
+  "name": "Link to Brickset",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Quickly navigate to Brickset listings from Lego store pages",
+
+  "icons": {
+    "19": "assets/brick-19.png",
+    "38": "assets/brick-38.png",
+    "48": "assets/brick-48.png",
+    "64": "assets/brick-64.png",
+    "128": "assets/brick-128.png"
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "update_url": "https://f004.backblazeb2.com/file/brickset-extension/updates.json"
+    }
+  },
+
+  "page_action": {
+    "default_icon": {
+      "19": "assets/brick-19.png",
+      "38": "assets/brick-38.png",
+      "48": "assets/brick-48.png",
+      "64": "assets/brick-64.png",
+      "128": "assets/brick-128.png"
+    },
+    "default_title": "View on Brickset",
+    "show_matches": ["https://www.lego.com/*/product/*"]
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.lego.com/*/product/*"],
+      "js": ["content-script.js"]
+    }
+  ]
+}
